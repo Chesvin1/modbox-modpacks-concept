@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Static concept for browsing modpacks inside the Apex Hosting Modbox panel.">
+  <title>Modbox — Modpacks concept</title>
+  <link rel="icon" href="assets/cube.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="panel-sidebar" aria-label="Modbox navigation">
+    <div class="sidebar-title">Modbox</div>
+    <div class="panel-nav-item"><i class="fa" aria-hidden="true">&#xf060;</i>Back to Server</div>
+    <div class="panel-nav-item" aria-current="page"><i class="fa" aria-hidden="true">&#xf002;</i>Browse</div>
+    <div class="panel-nav-item"><i class="fa" aria-hidden="true">&#xf0ae;</i>Manage Installed</div>
+  </aside>
+
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><span>Servers</span><span class="slash">/</span><span>Support Test Server - 1</span><span class="slash">/</span><span class="muted">Modbox</span></nav>
+
+    <div class="resource-tabs" aria-label="Resource type">
+      <button class="resource-tab" type="button" aria-pressed="false"><i class="fa" aria-hidden="true">&#xf1b2;</i>Mods</button>
+      <button class="resource-tab active" type="button" aria-pressed="true"><i class="fa" aria-hidden="true">&#xf1b3;</i>Modpacks</button>
+    </div>
+
+    <div class="search-box" role="search">
+      <i class="fa" aria-hidden="true">&#xf002;</i>
+      <input type="search" aria-label="Search modpacks" placeholder="Search modpacks..." maxlength="64">
+      <button class="search-button" type="button">Search</button>
+    </div>
+
+    <div class="browse-content">
+      <aside class="filters" aria-label="Modpack filters">
+        <section class="filter-section" aria-labelledby="categories-heading">
+          <h2 id="categories-heading">Filter by Categories</h2>
+          <button id="all-categories" class="all-categories active" type="button" aria-pressed="true"><i class="fa" aria-hidden="true">&#xf00a;</i>All Categories</button>
+          <div id="category-options" class="filter-options"></div>
+          <button class="show-less" type="button" aria-expanded="true" aria-controls="category-options">Show less</button>
+        </section>
+        <section class="filter-section" aria-labelledby="loaders-heading">
+          <h2 id="loaders-heading">Mod Loaders</h2>
+          <div class="filter-options">
+            <label><input type="checkbox" name="loader" value="forge">Forge</label>
+            <label><input type="checkbox" name="loader" value="fabric">Fabric</label>
+            <label><input type="checkbox" name="loader" value="neoforge">NeoForge</label>
+            <label><input type="checkbox" name="loader" value="quilt">Quilt</label>
+          </div>
+        </section>
+        <section class="filter-section" aria-labelledby="environment-heading">
+          <h2 id="environment-heading">Environment</h2>
+          <div class="filter-options"><label><input type="checkbox" name="environment" value="server">Server</label><label><input type="checkbox" name="environment" value="client">Client</label></div>
+        </section>
+      </aside>
+
+      <section class="results" aria-label="Available modpacks">
+        <div class="results-header">
+          <span class="results-count">Page 1 of 500 — 10,000+ modpacks</span>
+          <div class="sort-controls">
+            <select aria-label="Sort modpacks"><option>Relevancy</option><option>Popularity</option><option>Latest Update</option><option>Creation Date</option><option>Total Downloads</option></select>
+            <select aria-label="Minecraft version"><option>All Versions</option><option>1.21.1</option><option>1.20.1</option><option>1.19.2</option><option>1.18.2</option><option>1.16.5</option><option>1.12.2</option></select>
+            <button class="sort-direction" type="button" aria-label="Descending order" aria-pressed="false"><i class="fa" aria-hidden="true">&#xf063;</i></button>
+          </div>
+        </div>
+        <div id="modpack-list" class="modpack-list"></div>
+        <div class="pagination" aria-label="Pagination preview">
+          <button type="button" disabled aria-label="Previous page"><i class="fa" aria-hidden="true">&#xf104;</i></button>
+          <span>Page</span><input type="number" value="1" min="1" max="500" aria-label="Page"><span>of 500</span>
+          <button type="button" aria-label="Next page"><i class="fa" aria-hidden="true">&#xf105;</i></button>
+          <span class="page-divider"></span><select aria-label="Results per page"><option>20 per page</option><option>10 per page</option><option>50 per page</option></select>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
