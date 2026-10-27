@@ -1,0 +1,8 @@
+Tool: built-in image_gen (image edit)
+Source: user-supplied Apex Hosting game file dropdown screenshot.
+
+Use case: precise-object-edit / ui-mockup.
+Edit target: the attached screenshot of the Apex Hosting game file dropdown (790 by 457 pixels).
+Create a polished, realistic UI concept by making ONLY this small change: add an understated, modern green pill badge reading exactly "Available in Modbox" to TWO existing rows: "All The Mods 6 - Sky (ATM6-TTS)" and "All The Mods 8 (ATM8)".
+Position both badges right-aligned within their corresponding row, sharing the same right edge around x=748, with comfortable space before the scrollbar, vertically centered on the row (around y=286 and y=412 respectively). Each badge should be compact (approximately 153px wide and 24px high), a muted deep green background, thin olive/lime green outline, 6px rounded corners, a small stacked-layers icon at left, and crisp light lime green text at approximately 11px. Tasteful and clean, no bright glow, no oversized elements.
+Critical invariants: preserve the screenshot's dimensions, crop, existing dark brown background, original pack names, cover thumbnails, row ordering, row heights, typography, top selected Neoforge 26.3 field with Info button, All The Mods search field, and right scrollbar. Preserve all other rows completely unchanged and do not add badges elsewhere. The two badged rows should still look like ordinary selectable rows in the same list; no separate sections, buttons, redirects, explanatory copy, installation state, or confirmation dialog. Do not change existing text or introduce any other visual changes. This is a flat UI screenshot, not a device mockup.
