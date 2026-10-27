@@ -24,7 +24,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 .sidebar-title{padding:4px 8px;height:28px;color:var(--secondary);border-bottom:1px solid #443629}
 .panel-nav-item{display:flex;align-items:center;gap:9px;height:38px;padding:0 15px;border-bottom:1px solid #443629;font-weight:700;background:#2d241b45}
 .panel-nav-item .fa{font-size:13px;color:#9c8262;width:11px}
-main{margin-left:var(--nav-width);padding:13px 25px 24px 15px}
+main{margin-left:var(--nav-width);padding:13px 25px 24px 15px;min-height:100vh;background:var(--bg)}
 .breadcrumb{display:flex;gap:5px;align-items:center;height:35px;padding:0 13px;border:1px solid var(--border);border-radius:2px;margin-bottom:11px;background:#2e251c40;font-size:13px}
 .muted,.slash{color:var(--muted)}
 .resource-tabs{display:flex;height:42px;margin-bottom:11px;border:1px solid var(--border);border-radius:6px;overflow:hidden}
